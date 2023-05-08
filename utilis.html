@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="fb:app_id" content="1565807193699425">
+<meta name="description" content="Bootstrap với các tiện ích trình bày văn bản, định dạng hiện thị chữ (màu sắc, nền, đậm, nghiêng), định dạng về hiện thị các phần tử, kẻ khung, bo góc, độ rộng và flexbox">
+<meta property="og:image" content="https://xuanthulab.net/images/post/cac-tien-ich-css-co-ban-cua-bootstrap-1387.jpg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Các tiện ích CSS cơ bản của Bootstrap">
+<meta property="og:description" content="Bootstrap với các tiện ích trình bày văn bản, định dạng hiện thị chữ (màu sắc, nền, đậm, nghiêng), định dạng về hiện thị các phần tử, kẻ khung, bo góc, độ rộng và flexbox">
+<meta property="og:url" content="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html">
+<title>Các tiện ích CSS cơ bản của Bootstrap</title>
+
+    <link href="./utilis_files/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./utilis_files/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./utilis_files/jquery-ui.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="https://xuanthulab.net/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <script src="./utilis_files/cb=gapi.loaded_2" nonce="q55xBZvL" async=""></script><script src="./utilis_files/sdk.js.tải xuống" async="" crossorigin="anonymous"></script><script src="./utilis_files/cb=gapi.loaded_1" nonce="q55xBZvL" async=""></script><script src="./utilis_files/cb=gapi(2).loaded_0" nonce="q55xBZvL" async=""></script><script src="./utilis_files/jquery-3.1.0.min.js.tải xuống"></script>
+    <script src="./utilis_files/popper.min.js.tải xuống"></script>
+    <script src="./utilis_files/bootstrap.min.js.tải xuống"></script>
+    <script src="./utilis_files/jquery-ui.min.js.tải xuống"></script>
+    <script src="./utilis_files/jquery.ui.touch-punch.min.js.tải xuống"></script>
+    <script src="./utilis_files/xtlab.js.tải xuống"></script>
+
+    <script async="" src="./utilis_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1NQM4YL839');
+    </script>
+
+<link rel="canonical" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html">
+<style>.gc-bubbleDefault{background-color:transparent!important;text-align:left;padding:0!important;margin:0!important;border:0!important;table-layout:auto!important}.gc-reset{background-color:transparent!important;border:0!important;padding:0!important;margin:0!important;text-align:left}.pls-bubbleTop{border-bottom:1px solid #ccc!important}.pls-contentLeft,.pls-topTail,.pls-vertShimLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif)!important}.pls-topTail{background-repeat:repeat-x!important;background-position:bottom!important}.pls-vertShim{background-color:#fff!important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5!important}.pls-vertShimLeft{background-repeat:repeat-y!important;background-position:100%!important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2!important}.pls-contentWrap{background-color:#fff!important;position:relative!important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:100%;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png)!important;background-repeat:repeat-y!important;vertical-align:top}.pls-dropBL,.pls-dropTR .pls-dropBR,.pls-tailleft,.pls-vert,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png)!important;background-repeat:repeat-x!important;width:100%;vertical-align:top}.pls-topLeft{background:inherit!important;text-align:right;vertical-align:bottom}.pls-topRight{background:inherit!important;text-align:left;vertical-align:bottom}.pls-bottomLeft{background:inherit!important;text-align:right}.pls-bottomRight{background:inherit!important;text-align:left;vertical-align:top}.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{display:none;position:relative}.pls-dropBL,.pls-dropBR,.pls-dropTR,.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png)!important;background-repeat:no-repeat}.tbl-grey .pls-dropBL,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropTR,.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailleft,.tbl-grey .pls-tailright,.tbl-grey .pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png)!important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-tailbottom,.pls-topLeft img,.pls-topRight img{vertical-align:bottom}.bubbleDropTR,.pls-bottomLeft,.pls-bottomLeft img,.pls-dropBottom img,.pls-dropBottomL img,.pls-dropBottomR img{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacerbottom,.pls-spacerleft,.pls-spacerright,.pls-spacertop{position:static!important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0}</style><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://z-p3-static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://xuanthulab.net/">Trang chủ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navcontentsupported" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navcontentsupported collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#" id="bootstraplist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bài viết Bootstrap 4.1</a><div class="dropdown-menu navcontentsupported" aria-labelledby="bootstraplist"><a class="dropdown-item" href="https://xuanthulab.net/bootstrap-css-framework/"> §1)  Tổng quan về Bootstrap</a><a class="dropdown-item" href="https://xuanthulab.net/xay-dung-layout-co-ban-voi-bootstrap.html"> §2)  Layout / Grid lưới cột và hàng</a><a class="dropdown-item active" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html"> §3)  Các tiện ích trình bày cơ bản</a><a class="dropdown-item" href="https://xuanthulab.net/ung-dung-lop-media-cua-bootstrap.html"> §4)  Đối tượng Media</a><a class="dropdown-item" href="https://xuanthulab.net/tao-breadcrumb-voi-bootstrap.html"> §5)  Breadcrumb</a><a class="dropdown-item" href="https://xuanthulab.net/thanh-dieu-huong-phan-trang-pagination-trong-bootstrap.html"> §6)  Pagination</a><a class="dropdown-item" href="https://xuanthulab.net/su-dung-badge-tao-ra-cac-nhan-lable-trong-bootstrap.html"> §7)  Badge - Label -Tag</a><a class="dropdown-item" href="https://xuanthulab.net/tao-cac-nut-bam-nhom-nut-bam-button-trong-boostrap.html"> §8)  Button - Nút bấm</a><a class="dropdown-item" href="https://xuanthulab.net/su-dung-jumbotron-tao-box-trinh-dien-lon-trong-bootstrap.html"> §9)  Jumbotron</a><a class="dropdown-item" href="https://xuanthulab.net/co-ban-ve-nav-xay-dung-tab-trong-bootstrap.html"> §10)  Tabs</a><a class="dropdown-item" href="https://xuanthulab.net/tao-thanh-navbar-trong-bootstrap.html"> §11)  NavBar</a><a class="dropdown-item" href="https://xuanthulab.net/su-dung-card-tao-box-chua-noi-dung-trong-bootstrap.html"> §12)  Card</a><a class="dropdown-item" href="https://xuanthulab.net/su-dung-collapse-an-hien-noi-dung-html-trong-bootstrap.html"> §13)  Collapse</a><a class="dropdown-item" href="https://xuanthulab.net/tao-cac-menu-do-xuong-dropdown-trong-bootstrap.html"> §14)  DropDown Menu</a><a class="dropdown-item" href="https://xuanthulab.net/tao-alert-trong-bootstrap.html"> §15)  Alert</a><a class="dropdown-item" href="https://xuanthulab.net/tao-cac-slide-trong-bootstrap-voi-carousel.html"> §16)  Slide</a><a class="dropdown-item" href="https://xuanthulab.net/tao-list-group-trong-bootstrap.html"> §17)  List Group</a><a class="dropdown-item" href="https://xuanthulab.net/tao-ra-popover-voi-boostrap.html"> §18)  Popover</a><a class="dropdown-item" href="https://xuanthulab.net/tao-thanh-progress-voi-bootstrap.html"> §19)  Progress</a><a class="dropdown-item" href="https://xuanthulab.net/tao-tooltip-voi-bootstrap.html"> §20)  Tooltip</a><a class="dropdown-item" href="https://xuanthulab.net/tao-cac-hop-thoai-modal-trong-bootstrap.html"> §21)  Hộp thoại - Modal</a><a class="dropdown-item" href="https://xuanthulab.net/xay-dung-html-form-voi-bootstrap.html"> §22)  Form</a></div></li><li class="nav-item">
+                                    <a class="nav-link active text-warning" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html"> §3)  Các tiện ích trình bày cơ bản</a>
+                                </li>
+               
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+<div class="container"><nav class="breadcrumbnav"><ul class="breadcrumb" vocab="https://schema.org/" typeof="BreadcrumbList"><li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+                  <a property="item" typeof="WebPage" href="https://xuanthulab.net/css/">
+                    <span property="name">CSS</span>
+                  </a>
+                <meta property="position" content="1"></li><li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+                  <a property="item" typeof="WebPage" href="https://xuanthulab.net/bootstrap-css-framework/">
+                    <span property="name">Bootstrap - CSS Framework</span>
+                  </a>
+                <meta property="position" content="2"></li></ul></nav>
+
+<div class="page-header">
+    <h1>Các tiện ích CSS cơ bản của Bootstrap</h1>
+    <p class="lead">Bootstrap với các tiện ích trình bày văn bản, định dạng hiện thị chữ (màu sắc, nền, đậm, nghiêng), định dạng về hiện thị các phần tử, kẻ khung, bo góc, độ rộng và flexbox</p>
+</div>
+<div class="main-post">
+    <script async="" src="./utilis_files/f.txt"></script>
+    <!-- XUANTHULAB1 -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4170344512131207" data-ad-slot="6971440560" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <ul class="list-group list-group-flush"><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Text"><strong>Tiện ích với Text</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Verticalalignment"><strong>Căn lề theo chiều đứng</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#MarginPadding"><strong>Thiết lập Margin, Padding</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Background"><strong>Màu nền</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Display"><strong>Thiết lập thuộc tính display</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Float"><strong>Thiết lập thuộc tính float</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Position"><strong>Thiết lập thuộc tính position</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Border"><strong>Thiết lập border - bo viền khung</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Shadows"><strong>Đổ bóng hình hộp</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Sizes"><strong>Thiết lập chiều cao, chiều rộng</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Embeds"><strong>Embeds - Nhúng Video YouTube</strong></a></li><li class="list-group-item p-0"><a href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#flex"><strong>FlexBox</strong></a></li></ul>        <p class="alert alert-secondary">
+            <strong class="text-success">breakpoint</strong><br> Trong Bootstrap thiết kế các lớp CSS tương ứng với các màn hình tương ứng với các kích thước dưới:
+            gồm màn hình nhỏ (576px), trung bình (768px), lớn (992px), rất lớn (1200px) - gọi chúng là các breakpoint
+            (sử dụng media query để tạo CSS) với các ký hiệu trong lớp CSS tương ứng là:
+            <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>. Các ký hiệu <code>{breakpoint}</code>
+            ở phần trình bày dưới bạn có thể thay thế bằng sm, md, log, xl hoặc để trống
+            <br>
+            Ví dụ: <code>text-md-right</code> thì là căn lề về phải khi màn hình dưới 678px, <code>text-sm-center</code>
+        căn giữa khi màn hình dưới 576px</p>
+    
+        <p class="alert alert-secondary"><strong class="text-success">theme-colors</strong><br>
+            Các màu mặc định phối hợp để xây dựng nên Theme của Bootstrap gồm có các màu đặt theo tên gồm: <br>
+            <span style="font-size: 30px">
+                <code class="text-primary">primary</code>,
+            <code class="text-secondary">secondary</code>,
+            <code class="text-success">success</code>,
+            <code class="text-info">info</code>,
+            <code class="text-warning">warning</code>,
+            <code class="text-danger">danger</code>,
+            <code class="text-light">light</code>,
+            <code class="text-dark">dark</code>
+            </span>. <br>
+            Hãy nhớ tên này vì nó sử dụng trong nhiều class ví dụ như <code>text-danger</code>,
+            <code>bg-success</code>, <code>btn-success</code> ...
+        </p>
+    
+    
+        <a id="Text" name="Text"></a>
+        <h2 class="display-4 text-danger font35">Các tiện tích trình bày Text</h2>
+        <div class="row">
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right">
+                <code>.text-{breakpoint}-{left|right|center}</code>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">
+                Đó là các lớp để căn lề trái, phải, giữa của dòng chữ
+                (<code>.text-right</code>, <code>.text-md-center</code> <code>...</code>)
+            </div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right">
+                <code>.text-monospace</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">
+                <span class="text-monospace">class thiết lập chữ hiện thị ở font monospace</span></div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.text-justify</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">dãn đều dòng chữ</div>
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.text-nowrap</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Thiết lập dòng chữ không có chế độ wrap (không ngắt dòng)</div>
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.text-truncate</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Cắt chữ khi vượt quá chiều dài dòng</div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.text-lowercase</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Chuyển thành chữ thường</div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.text-uppercase</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Chuyển thành chữ in hoa</div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.text-capitalize</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">In hoa ký tự đầu</div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.font-weight-(light|normal|bold)</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">
+                Thiết lập chữ mỏng (<code>font-weight-light</code>), bình thường (<code>font-weight-normal</code>), đậm</div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.font-italic</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Chữ nghiêng</div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.text-(<span class="text-white bg-secondary">white</span>|<span class="text-primary">primary</span>| <span class="text-secondary">secondary</span>|<span class="text-success">success</span>|<span class="text-info">info</span>|<span class="text-warning">warning</span>|<span class="text-danger">danger</span>|
+                    <span class="text-light bg-secondary">light</span>|<span class="text-dark">dark</span>|
+                    <span class="text-muted">muted</span>|
+                    <span class="text-muted">hide</span>|
+                    <span class="text-muted">decoration-none</span>|
+                    <span class="text-muted">text-break</span>|
+                    <span class="text-muted">text-reset</span>|
+                    <span class="text-black-50">black-50</span>
+                    |<span class="text-white-50 bg-dark">white-50</span>)</code>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Thiết lập màu chữ như <code>text-white</code>,
+            <code>text-dark</code> ... <code>text-white-50</code>, một số điều khiển cách hiện thị như <code>text-hide</code>
+            ẩn text, <code>decoration-none</code> hủy hiệu ứng trang trí (như chữ in), <code>text-reset</code>
+            đưa về màu kế thừa mặc định</div>
+    
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.display-(1|2|3|4)</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Sử dụng thiết lập tiêu đề lớn trong trang, có 4 kích
+            thước như <code>display-3</code></div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.lead</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Làm nổi bật một đoạn văn (ví dụ tóm tắt nội dung)</div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.mark</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8"><span class="mark">Đánh dấu một đoạn văn</span></div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.small</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8"><span class="small">Đánh dấu một đoạn văn có chữ nhỏ hơn</span></div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.blockquote</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8"><span class="blockquote">Tạo một hiện thị trích dẫn</span></div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.blockquote-footer</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8"><span class="blockquote-footer">Tạo một hiện thị trích dẫn có ký hiệu --</span></div>
+    
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.list-unstyled</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Đánh dấu ul, li bỏ kiểu trình bày danh sách</div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.list-inline</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Đánh dấu ul hiện thị dạng inline</div>
+    
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-5 col-xl-4 text-sm-right"><code>.list-inline-item</code></div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 col-xl-8">Đánh dấu li hiện thị dạng inline float left</div>
+    
+    
+        </div>
+        <p>Ví dụ</p>
+        <pre class="prettyprint lang-html">        &lt;p class="text-center text-md-right text-primary font-weight-bold font-italic text-uppercase"&gt;
+        Đây là dòng chữ Ví dụ
+    &lt;/p&gt;    </pre>
+        <p>Đoạn code trên thiết lập gồm: căn chữ ở giữa (<code>text-center</code>) nhưng khi màn hình từ md trở đi căn chữ bên phải
+            (<code>text-md-right</code>), màu chữ primay, font chữ đậm, font chữ nghiêng, chuyển hết thành chữ in hoa,
+            và kết quả là:
+        </p>
+    
+        <p class="text-center text-md-right text-primary font-weight-bold font-italic text-uppercase">Đây là dòng chữ Ví dụ</p>
+    
+    
+        <a id="Verticalalignment" name="Verticalalignment"></a>
+        <h2 class="display-4 text-danger font35">Căn lề theo chiều đứng các phần tử</h2>
+        <div class="row no-gutters">
+            <div class="w-100"><code>.align-{baseline|top|middle|bottom|text-bottom|text-top}</code></div>
+            <p>Với <code>align-baseline</code> đã thiết lập cơ bản mặc định của browser.</p>
+        </div>
+        <p>Các lớp căn lề theo chiều đứng chỉ áp dụng cho các phần tủ <code>inline</code>, <code>inline-block</code>. <code>inline-table</code> và các cell trong bảng</p>
+    
+        <pre class="prettyprint lang-html ">        &lt;p class="bg-secondary text-light text-center" style="line-height: 40px"&gt;
+        &lt;span class="align-baseline"&gt;baseline&lt;/span&gt;
+        &lt;span class="align-top"&gt;top&lt;/span&gt;
+        &lt;span class="align-middle"&gt;middle&lt;/span&gt;
+        &lt;span class="align-bottom"&gt;bottom&lt;/span&gt;
+        &lt;span class="align-text-top"&gt;text-top&lt;/span&gt;
+        &lt;span class="align-text-bottom"&gt;text-bottom&lt;/span&gt;
+    &lt;/p&gt;    </pre>
+        <p class="bg-secondary text-light text-center" style="line-height: 40px">
+            <span class="align-baseline">baseline</span>
+            <span class="align-top">top</span>
+            <span class="align-middle">middle</span>
+            <span class="align-bottom">bottom</span>
+            <span class="align-text-top">text-top</span>
+            <span class="align-text-bottom">text-bottom</span>
+        </p>
+    
+        <a id="MarginPadding" name="MarginPadding"></a>
+        <h2 class="display-4 text-danger font35">Thiết lập margin và padding</h2>
+        <p>Các lớp thiết lập margin là  <code>m{sides}-{size}</code> hoặc <code>m{sides}-{breakpoint}-{size}</code></p>
+        <p>Các lớp thiết lập padding là  <code>p{sides}-{size}</code> hoặc <code>p{sides}-{breakpoint}-{size}</code></p>
+        <p>Trong đó:</p>
+        <ul>
+            <li><code>sides</code> thay bằng <code>t|l|r|b|x|y</code> tương ứng với top, left, right, bottom, left-right, top-bottom. Nếu <code>sides</code> để trống nghĩa là thiết lập cho cả bốn phía (ví dụ <code>m-0</code>, <code>p-2</code></li>
+            <li><code>sizes</code> thay bằng các số <code>0</code> <code>1</code> <code>2</code> <code>3</code> <code>4</code> <code>5</code> hoặc <code>auto</code> để thiết lập kích thước (0, 0.25, 0.5, 1, 1.5, 3) rem</li>
+            <li><code>breakpoint</code> tương ứng với điểm chia màn hình <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> hoặc để trống</li>
+        </ul>
+    
+        <p>Ví dụ <code>px-md-4</code> thực hiện tạo padding cỡ 4 (1.5rem) cho cạnh trái, phải tương ứng màn hình md</p>
+    
+        <pre class="prettyprint lang-html ">        &lt;div class="mx-auto p-1 bg-danger text-white text-center" style="width: 200px;"&gt;
+        Hộp này nằm ở giữa do mx-auto
+    &lt;/div&gt;    </pre>
+        <div class="mx-auto p-1 bg-danger text-white text-center" style="width: 200px;">
+            Hộp này nằm ở giữa do mx-auto
+        </div>
+    
+        <a id="Background" name="Background"></a>
+        <h2 class="display-4 text-danger font35">Thiết lập màu nền</h2>
+        <p>Có các lớp:</p>
+        <div class="d-flex flex-wrap">
+            <div class="bg-primary p-4 text-white">
+                bg-primary
+            </div>
+    
+            <div class="bg-secondary p-4 text-white">
+                bg-secondary
+            </div>
+            <div class="bg-success p-4 text-white">
+                bg-success
+            </div>
+            <div class="bg-info p-4 text-white">
+                bg-info
+            </div>
+            <div class="bg-warning p-4 text-white">
+                bg-warning
+            </div>
+            <div class="bg-danger p-4 text-white">
+                bg-danger
+            </div>
+            <div class="bg-light p-4 text-dark">
+                bg-light
+            </div>
+            <div class="bg-danger p-4 text-white">
+                bg-danger
+            </div>
+            <div class="bg-dark p-4 text-white">
+                bg-dark
+            </div>
+        </div>
+    
+    
+    
+        <a id="Display" name="Display"></a>
+        <h2 class="display-4 text-danger font35">Thiết lập thuộc tính display</h2>
+        <p>Thuộc tính CSS <code>display</code> nhận các giá trị <strong>none, inline, inline-block, block, table, table-cell, table-row, flex, inline-flex</strong> có thể thiết lập trong Bootstrap với các class có cấu trúc</p>
+        <p><code>.d-{breakpoint}-{value}</code> ví dụ <code>.d-none</code>, <code>.d-sm-inline</code>, <code>.d-lg-flex</code>...</p>
+        <p>Thiết lập hiện thị phần tử dùng <code>.visible</code></p>
+        <p>Thiết lập ẩn phần tử dùng <code>.invisible </code></p>
+    
+    
+        <a id="Float" name="Float"></a>
+        <h2 class="display-4 text-danger font35">Thiết lập thuộc tính float</h2>
+        <p>Thuộc tính CSS <code>float</code> nhận các giá trị <strong>left, right, none</strong> có thể thiết lập trong Bootstrap với các class có cấu trúc</p>
+        <p><code>.float-{breakpoint}-{value}</code> ví dụ <code>.float-none</code>, <code>.float-sm-right</code>, <code>.float-lg-left</code>...</p>
+        <p>Muốn hủy thuộc tính float của một phần tử dùng class <code>clearfix</code></p>
+    
+        <a id="Position" name="Position"></a>
+        <h2 class="display-4 text-danger font35">Thiết lập thuộc tính position</h2>
+        <p>Đó là các class: <code>.position-(static|relative|absolute|fixed|sticky)</code>, <code>.fixed-top</code>, <code>.fixed-bottom</code></p>
+    
+        <a id="Border" name="Border"></a>
+        <h2 class="display-4 text-danger font35">Thiết lập thuộc border</h2>
+        <p>Cạnh được kẻ</p>
+        <ul>
+            <li><code>.border</code> thiết lập kẻ viền cả bốn cạnh</li>
+            <li><code>.border-top</code> thiết lập  kẻ viền cạnh trên</li>
+            <li><code>.border-bottom</code> thiết lập kẻ viền cạnh dưới</li>
+            <li><code>.border-left</code> thiết lập kẻ viền cạnh trái</li>
+            <li><code>.border-right</code> thiết lập kẻ viền cạnh phải</li>
+        </ul>
+        <p>Màu đường kẻ thiết lập bằng các class: <code>.border-(primary|secondary|success|
+                danger|warning|info|light|dark|white)</code></p>
+        <p>Góc thiết lập bo tròn sử dụng các class:</p>
+        <ul>
+            <li><code>.rounded</code> bo tròn cả 4 góc</li>
+            <li><code>.rounded-(left|top|right|bottom)</code> bo tròn 2 cạnh phía trái, trên, phải, dưới</li>
+            <li><code>.rounded-circle</code> bán kính bo tròn thiết lập để biến hình vuông thành hình tròn</li>
+            <li><code>.rounded-0</code> hủy bo tròn các góc</li>
+        </ul>
+        <a id="Shadows" name="Shadows"></a>
+        <h2 class="display-4 text-danger font35">Đổ bóng hình hộp</h2>
+        <ul>
+            <li><code>.shadow</code> đổ bóng cỡ trung bình</li>
+            <li><code>.shadow-sm</code> đổ bóng cỡ nhỏ</li>
+            <li><code>.shadow-lg</code> đổ bóng cỡ lớn</li>
+            <li><code>shadow-none</code> bỏ đổ bóng</li>
+    
+        </ul>
+        <a id="Sizes" name="Sizes"></a>
+        <h2 class="display-4 text-danger font35">Thiết lập chiều cao, chiều rộng</h2>
+        <ul>
+            <li><code>w-25</code> <code>w-50</code> <code>w-75</code> <code>w-100</code> <code>w-auto</code> để thiết lập chiều rộng theo phần trăm của chiều rộng phần tử cha, auto là tự động co</li>
+            <li><code>mw-100</code> thiết lập thuộc tính <code>max-width: 100%</code></li>
+            <li><code>h-25</code> <code>h-50</code> <code>h-75</code> <code>h-100</code> <code>h-auto</code> để thiết lập chiều cao theo phần trăm của chiều cao phần tử cha, auto là tự động co</li>
+            <li><code>mh-100</code> thiết lập thuộc tính <code>max-height: 100%</code></li>
+        </ul>
+    
+        <a id="Embeds" name="Embeds"></a>
+        <h2 class="display-4 text-danger font35">Nhúng Video</h2>
+        <p>Cách để nhúng Video đảm bảo tính năng responsive</p>
+    
+        <pre class="prettyprint lang-html ">        &lt;div class="embed-responsive embed-responsive-16by9"&gt;
+        &lt;iframe class="embed-responsive-item" 
+            src="https://www.youtube.com/embed/xxxxx?rel=0" allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/div&gt;    </pre>
+    
+        <a id="flex" name="flex"></a>
+        <h2 class="display-4 text-danger font35">FlexBox với Bootstrap</h2>
+        <p>Bootstrap triển khai theo cách phong phú hơn về flexbox, tuy nhiên cơ bản đều thiết lập các tính năng tiện ích của flexbox như nội dung trong CSS thông thường, nên cần thiết đọc hiểu
+            <a href="https://xuanthulab.net/su-dung-flexbox-bo-cuc-trang-trong-css.html">CSS flexbox</a> trước</p>
+        <p class="alert alert-danger"><code><strong>.flex</strong></code> trong Bootstrap là phần nhân quan trọng nhất nên hãy cố gắp hiểu thật tốt phần này</p>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-danger">Phần tử chứa - kích hoạt có tính năng flexbox</strong></p>
+                <p> Sử dụng các lớp: <code>.d-flex</code> hoặc <code>.d-{breakpoint}-flex</code> như <code>.d-sm-flex</code>,
+                    nếu áp dụng kiểu inline-flex thì sử dụng lớp <code>.d-inline-flex</code> hoặc <code>.d-{breakpoint}-inline-flex</code></p>
+    
+            </div>
+            <div class="col-xs-12 col-sm-6">
+    <pre class="prettyprint lang-html">        &lt;div class="d-flex"&gt;
+    &lt;!--Code HTML--&gt;
+    &lt;/div&gt;    </pre>
+            </div>
+            <hr class="w-100">
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-danger">Phần tử chứa - thiết lập flex-wrap</strong></p>
+                <p>Như đã biết thuộc tính CSS <code>flex-wrap</code> nhận các giá trị <code>nowrap</code>, <code>wrap</code>, <code>wrap-reverse</code> gọi chúng là <code>{wrap}</code>. Trong Bootstrap các giá trị này thiết lập bàng lớp <code>.flex-{breakpoints}-{wrap}</code> như:</p>
+                <ul class="list-unstyled">
+                    <li><code>.flex-nowrap</code>, <code>.flex-wrap</code>, <code>.flex-reverse</code></li>
+                    <li><code>.flex-sm-nowrap</code>, <code>.flex-lg-wrap</code>, <code>.flex-md-reverse</code> <code>...</code></li>
+                </ul>
+    
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p>Ví dụ <code>.flex-wrap</code> - phần tử con xuống dòng mới khi vượt kích thước phần tử chứa</p>
+    
+                <pre class="prettyprint lang-html">        &lt;div class="d-flex flex-wrap"&gt;
+       &lt;div class="bg-primary p-2 m-2"&gt;PT1&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT2&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT3&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT4&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT5&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT6&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT7&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT8&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT9&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT10&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT11&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT12&lt;/div&gt;
+    &lt;/div&gt;    </pre>
+                <div class="d-flex flex-wrap">
+                    <div class="bg-primary p-2 m-2">PT1</div>
+                    <div class="bg-primary p-2 m-2">PT2</div>
+                    <div class="bg-primary p-2 m-2">PT3</div>
+                    <div class="bg-primary p-2 m-2">PT4</div>
+                    <div class="bg-primary p-2 m-2">PT5</div>
+                    <div class="bg-primary p-2 m-2">PT6</div>
+                    <div class="bg-primary p-2 m-2">PT7</div>
+                    <div class="bg-primary p-2 m-2">PT8</div>
+                    <div class="bg-primary p-2 m-2">PT9</div>
+                    <div class="bg-primary p-2 m-2">PT10</div>
+                    <div class="bg-primary p-2 m-2">PT11</div>
+                    <div class="bg-primary p-2 m-2">PT12</div>
+    
+                </div>
+            </div>
+            <hr class="w-100">
+    
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-danger">Phần tử chứa - thiết lập hướng chính flex-direction</strong></p>
+                <p>Như đã biết hướng chính của flexbox nhận các giá trị: <code>row</code>, <code>row-reverse</code>, <code>column</code>, <code>column-reverse</code> gọi chúng là <code>{direction}</code></p>
+                <p>Để thiết lập các giá trị này cho phần tử dùng đến các thuộc tính: <code>.flex-{direction}</code> hoặc <code>.flex-{breakpoint}-{direction}</code> như:</p>
+                <ul class="list-unstyled">
+                    <li><code>.flex-row</code>, <code>.flex-column</code>, <code>.flex-column-reverse</code>, <code>.flex-row-reverse</code></li>
+                    <li><code>.flex-xs-row</code>, <code>.flex-sm-column</code>, <code>.flex-lg-column-reverse</code>, <code>.flex-md-row-reverse</code> <code>...</code></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p>Ví dụ <code>.flex-column</code> - đổi hướng chính thẳng đứng</p>
+                <pre class="prettyprint lang-html">        &lt;div class="d-flex flex-wrap flex-column"&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT1&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT2&lt;/div&gt;
+    &lt;/div&gt;    </pre>
+                <div class="d-flex flex-wrap flex-column">
+                    <div class="bg-primary p-2 m-2">PT1</div>
+                    <div class="bg-primary p-2 m-2">PT2</div>
+    
+                </div>
+    
+    
+            </div>
+            <hr class="w-100">
+    
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-danger">Phần tử chứa - đẩy phần tử con theo hướng chính justify-content</strong></p>
+                <p>Trong phần CSS flexbox, đã biết thuộc tính <code>justify-content</code> để đẩy các phần tử con về một phía nào đó theo hướng chính, nhận các giá trị <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-around</code>, <code>space-between</code> thì trong Bootstrap các giá trị này viết là <code>start</code>,
+                    <code>end</code>, <code>center</code>, <code>around</code>, <code>between</code> ký hiệu chúng là <code>{values}</code></p>
+                <p>Các thuộc tính thiết lập là: <code>justify-content-{values}</code> hoặc <code>justify-content-{breakpoint}-{values}</code></p>
+    
+    
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p>Ví dụ hướng chính là nằm ngang, thì <code>.justify-content-end</code> đẩy các phần tử con về cuối hàng</p>
+                <pre class="prettyprint lang-html">        &lt;div class="d-flex justify-content-end"&gt;
+        &lt;div class="bg-primary p-4 m-2"&gt;PT1&lt;/div&gt;
+        &lt;div class="bg-primary p-4 m-2"&gt;PT2&lt;/div&gt;
+    &lt;/div&gt;    </pre>
+                <div class="d-flex justify-content-end">
+                    <div class="bg-primary p-4 m-2">PT1</div>
+                    <div class="bg-primary p-4 m-2">PT2</div>
+                </div>
+            </div>
+            <hr class="w-100">
+    
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-danger">Phần tử chứa - đẩy phần tử con theo hướng vuông góc align-items</strong></p>
+                <p>Trong CSS flexbox, khi sư dụng thuộc tính <code>align-items</code> là nhằm đẩy các phần tử con theo hướng <code>VUÔNG GÓC HƯỚNG CHÍNH</code></p>
+                <p>Sử dụng các class <code>.align-items-{values}</code> hoặc <code>.align-items-{breakpoints}-{values}</code> trong đó values là các giá trị <code>stretch</code>, <code>center</code>, <code>baseline</code>, <code>around</code>, <code>between</code></p>
+    
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p>Ví dụ hướng chính nằm ngang, thì <code>align-items-center</code> sẽ điều chỉnh phần tử con nằm giữa box theo phương đứng</p>
+                <pre class="prettyprint lang-html">        &lt;div class="bg-warning d-flex align-items-center" 
+        style="height: 100px"&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT1&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT2&lt;/div&gt;
+    &lt;/div&gt;    </pre>
+                <div class="bg-warning d-flex align-items-center" style="height: 100px">
+                    <div class="bg-primary p-2 m-2">PT1</div>
+                    <div class="bg-primary p-2 m-2">PT2</div>
+                </div>
+    
+                <p><code>align-items-center</code> đẩy phần tử xuống đáy box theo phương đứng, thử kết hợp với <code>justify-content-center</code> thì nó đẩy thêm nằm giữa theo phương ngang</p>
+                <pre class="prettyprint lang-html">        &lt;div class="bg-warning d-flex align-items-end justify-content-center"
+         style="height: 100px"&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT1&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT2&lt;/div&gt;
+    &lt;/div&gt;    </pre>
+                <div class="bg-warning d-flex align-items-end justify-content-center" style="height: 100px">
+                    <div class="bg-primary p-2 m-2">PT1</div>
+                    <div class="bg-primary p-2 m-2">PT2</div>
+                </div>
+    
+            </div>
+            <hr class="w-100">
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-danger">Phần tử chứa - căn chỉnh chi có nhiều hàng (cột) align-content</strong></p>
+                <p>Khi phần tử chứa có <code>.flex-wrap</code>, nếu các phần tử con bị chia ra thành nhiều hàng (hoặc cột) thì lúc này có thể sử dụng đến các thuộc tính <code>.align-content-{values}</code> hoặc <code>.align-content-{breakpoint}-{values}</code></p>
+                <p>Với {values} là <code>start</code>, <code>end</code>, <code>center</code>, <code>around</code>, <code>stretch</code></p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p>Tác động của các lớp này tương tự như ví dụ trong phần <a href="https://xuanthulab.net/su-dung-flexbox-bo-cuc-trang-trong-css.html" target="_blank">FlexBox</a></p>
+            </div>
+            <hr class="w-100">
+    
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-info">Phần tử con - trôi theo hướng vuông góc align-self</strong></p>
+                <p>Đây là cách thiết lập cấp độ phần tử con, thiết lập hiệu lực riêng cho phần tử con cụ thể, nó thiết lập nó trôi về phía nào theo hướng <strong>vuông góc</strong> với chính.</p>
+                <p>Sử dụng class <code>.align-self-{values}</code> hoặc <code>.align-self-{breakpoints}-{values}</code></p>
+                <p>Với <code>values</code> là: <code>start</code>, <code>end</code>, <code>center</code>, <code>baseline</code>, <code>stretch</code></p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                    <pre class="prettyprint lang-html">        &lt;div class="bg-warning d-flex align-items-sm-start" style="height: 100px"&gt;
+        &lt;div class="bg-primary p-2 m-2 align-self-center"&gt;PT1&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2 align-self-end"&gt;PT2&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2 align-self-stretch"&gt;PT3&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT4&lt;/div&gt;
+    &lt;/div&gt;    </pre>
+                <div class="bg-warning d-flex align-items-sm-start" style="height: 100px">
+                    <div class="bg-primary p-2 m-2 align-self-center">PT1</div>
+                    <div class="bg-primary p-2 m-2 align-self-end">PT2</div>
+                    <div class="bg-primary p-2 m-2 align-self-stretch">PT3</div>
+                    <div class="bg-primary p-2 m-2">PT4</div>
+    
+                </div>
+    
+            </div>
+            <hr class="w-100">
+    
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-info">Phần tử con - Fill</strong></p>
+                <p>Nếu các phần tử con trong <code>.flex</code> có lớp <code>.flex-fill</code> thì nó ép các phần tử con đó theo hướng chính kích thước sẽ bằng nhau</p>
+            </div>
+    
+    
+            <div class="col-xs-12 col-sm-6">
+                            <pre class="prettyprint lang-html">        &lt;div class="d-flex "&gt;
+        &lt;div class="bg-primary p-2 m-2 flex-fill "&gt;PT1&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2 flex-fill "&gt;PT2&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2 flex-fill "&gt;PT3&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2 flex-fill "&gt;PT4&lt;/div&gt;
+    
+    &lt;/div&gt;</pre>
+                <div class="d-flex ">
+                    <div class="bg-primary p-2 m-2 flex-fill">PT1</div>
+                    <div class="bg-primary p-2 m-2 flex-fill">PT2</div>
+                    <div class="bg-primary p-2 m-2 flex-fill">PT3</div>
+                    <div class="bg-primary p-2 m-2 flex-fill">PT4</div>
+    
+                </div>
+            </div>
+    
+            <hr class="w-100">
+    
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-info">Phần tử con - Grow</strong></p>
+                <p>Phần tử con kích hoạt với lớp <code>.flex-grow-1</code> thì kích thước theo hướng chính của nó sẽ mở rộng tối đa kích thước có thể có trong phần tử chữa</p>
+    
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                                    <pre class="prettyprint lang-html">        &lt;div class="d-flex"&gt;
+        &lt;div class="bg-primary p-2 m-2 flex-grow-1"&gt;PT1&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT2&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT3&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT4&lt;/div&gt;
+    &lt;/div&gt;</pre>
+                <div class="d-flex">
+                    <div class="bg-primary p-2 m-2 flex-grow-1">PT1</div>
+                    <div class="bg-primary p-2 m-2">PT2</div>
+                    <div class="bg-primary p-2 m-2">PT3</div>
+    
+                </div>
+            </div>
+            <hr class="w-100">
+    
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-info">Phần tử con - đẩy phần tử bằng margin</strong></p>
+                <p>Nếu phần tử chứa có hướng chính nằm ngang, thì phần tử con nào có <code>.mr-auto</code> thì sẽ đẩy các phần tử bên phải nó trôi về phải của phần tử chứa, nếu có <code>.ml-auto</code> thì nó đẩy các phần tử con bên trái nó trôi về bên trái phần tử chứa</p>
+                <p>Nếu phần tử chứa có hướng chính thẳng đứng (<code>.flex-column</code>) thì phần tử nào có <code>.mb-auto</code> thì nó sẽ đẩy các phần tử dưới nó về đáy của phần tử, nếu có <code>.mt-auto</code> sẽ đẩy phần tủ trên nó về phía trên phần tử chứa.</p>
+    
+    
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                                            <pre class="prettyprint lang-html">        &lt;div class="d-flex"&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT1&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2 mr-auto"&gt;PT2&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT3&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2"&gt;PT4&lt;/div&gt;
+    &lt;/div&gt;</pre>
+                <div class="d-flex">
+                    <div class="bg-primary p-2 m-2">PT1</div>
+                    <div class="bg-primary p-2 m-2 mr-auto">PT2</div>
+                    <div class="bg-primary p-2 m-2">PT3</div>
+                    <div class="bg-primary p-2 m-2">PT4</div>
+    
+                </div>
+    
+            </div>
+            <hr class="w-100">
+    
+            <div class="col-xs-12 col-sm-6">
+                <p><strong class="text-info">Phần tử con - đổi thứ tự hiện thị</strong></p>
+                <p>FlexBox có thuộc tính <code>order</code> gán bằng một con số là thứ tự hiện thị phần tử. Đặc tính này cho phép đổi thứ tự hiện thị mà không cần thay code HTML. Mặc định thứ tự hiện thị theo vị trí code HTML cái nào viết code trước thì hiện thị trước, tuy nhiên Bootstrap cho phép điều chỉnh bằng các lớp <code>order-0</code> đến <code>order-12</code></p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                                                    <pre class="prettyprint lang-html">        &lt;div class="d-flex"&gt;
+        &lt;div class="bg-primary p-2 m-2 order-2"&gt;PT1&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2 order-3"&gt;PT2&lt;/div&gt;
+        &lt;div class="bg-primary p-2 m-2 order-1"&gt;PT3&lt;/div&gt;
+    &lt;/div&gt;</pre>
+                <div class="d-flex">
+                    <div class="bg-primary p-2 m-2 order-2">PT1</div>
+                    <div class="bg-primary p-2 m-2 order-3">PT2</div>
+                    <div class="bg-primary p-2 m-2 order-1">PT3</div>
+    
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="dropdown fixed-bottom text-right">
+    <button class="btn btn-danger dropdown-toggle m-1 btn-sm" data-toggle="dropdown">
+        Mục lục bài viết
+    </button>
+    <div class="dropdown-menu"><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Text"><strong>Tiện ích với Text</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Verticalalignment"><strong>Căn lề theo chiều đứng</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#MarginPadding"><strong>Thiết lập Margin, Padding</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Background"><strong>Màu nền</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Display"><strong>Thiết lập thuộc tính display</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Float"><strong>Thiết lập thuộc tính float</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Position"><strong>Thiết lập thuộc tính position</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Border"><strong>Thiết lập border - bo viền khung</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Shadows"><strong>Đổ bóng hình hộp</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Sizes"><strong>Thiết lập chiều cao, chiều rộng</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#Embeds"><strong>Embeds - Nhúng Video YouTube</strong></a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html#flex"><strong>FlexBox</strong></a></div></div>
+
+
+
+     
+           
+
+ 
+             <div class="p-2 row justify-content-center align-items-center align-content-center m-1 mb-4 youtubesub">
+                    <div class="col-6 text-right text-uppercase textintro">
+                        <a href="https://www.youtube.com/xuanthulab?sub_confirmation=1" target="_blank" class="btn btn-sm btn-warning">ĐĂNG KÝ KÊNH, XEM CÁC VIDEO TRÊN XUANTHULAB</a>
+                    </div>
+                    <div class="col-6">
+                        <div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 142px; height: 48px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 142px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I0_1683532827624" name="I0_1683532827624" src="./utilis_files/subscribe_embed.html" data-gapiattached="true"></iframe></div>
+                    </div>
+                    
+                    <div class="col-12">
+                    <hr>
+                     <form class="form-inline  mt-2 w-100" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#39;https://feedburner.google.com/fb/a/mailverify?uri=xuanthulab&#39;, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true">
+                 <span></span>
+                  <div class="input-group mb-2 mr-sm-2">
+<div class="input-group-prepend">
+      <div class="input-group-text">Đăng ký nhận bài viết mới</div>
+    </div>
+    <input type="text" class="form-control" style="width:200px" name="email" placeholder="Địa chỉ email">
+  </div>
+
+                
+                <input type="hidden" value="xuanthulab" name="uri">
+                <input type="hidden" name="loc" value="en_US">
+                <input type="submit" value="Đăng ký" class="btn btn-danger mb-2"></form>
+</div>
+                    
+                   
+                    
+                
+            </div>
+
+
+</div>
+
+
+        <div class="socialmediabox">
+            
+<div class="fb-like fb_iframe_widget" data-href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1565807193699425&amp;container_width=1110&amp;href=https%3A%2F%2Fxuanthulab.net%2Fcac-tien-ich-css-co-ban-cua-bootstrap.html&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;size=small&amp;width="><span style="vertical-align: bottom; width: 150px; height: 28px;"><iframe name="fcaeba366878f8" width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./utilis_files/like.html" style="border: none; visibility: visible; width: 150px; height: 28px;" class=""></iframe></span></div>
+
+
+ <div class="tw">
+ <a href="https://twitter.com/share?url=https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html&amp;via=xaydungkientruc">
+ <img src="./utilis_files/favicon.ico">
+</a>
+</div>        </div>
+        <div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html" data-width="100%" data-numposts="5" data-colorscheme="light" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=1565807193699425&amp;color_scheme=light&amp;container_width=1110&amp;height=100&amp;href=https%3A%2F%2Fxuanthulab.net%2Fcac-tien-ich-css-co-ban-cua-bootstrap.html&amp;locale=vi_VN&amp;numposts=5&amp;sdk=joey&amp;version=v7.0&amp;width=" style="width: 100%;"><span style="vertical-align: bottom; width: 100%; height: 432px;"><iframe name="fa63ef152d584c" width="1000px" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./utilis_files/comments.html" style="border: none; visibility: visible; width: 100%; height: 432px;" class=""></iframe></span></div>
+
+<aside class="box-post-others">
+    <div class="list-group">
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/dung-grunt-tao-du-an-bien-dich-sass-thanh-css-tuy-bien-thu-vien-css-bootstrap.html">Dùng grunt tạo dự án biên dịch SASS thành CSS tùy biến thư viện CSS Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/ung-dung-lop-media-cua-bootstrap.html">Ứng dụng lớp .media của Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/xay-dung-layout-co-ban-voi-bootstrap.html">Xây dựng Layout cơ bản với Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/tao-thanh-navbar-trong-bootstrap.html">Tạo thanh Navbar trong Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/co-ban-ve-nav-xay-dung-tab-trong-bootstrap.html">Cơ bản về Nav xây dựng Tab trong Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/su-dung-jumbotron-tao-box-trinh-dien-lon-trong-bootstrap.html">Sử dụng Jumbotron tạo box trình diễn lớn trong Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/tao-cac-nut-bam-nhom-nut-bam-button-trong-boostrap.html">Tạo các nút bấm, nhóm nút bấm button trong Boostrap</a>
+            </div>
+</aside>
+
+
+
+</div><script src="./utilis_files/platform.js.tải xuống" async="" defer="" gapi_processed="true">{lang: 'vi'}</script>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script async="" defer="" crossorigin="anonymous" src="./utilis_files/sdk.js(1).tải xuống" nonce="q55xBZvL"></script>
+
+
+<iframe name="oauth2relay286531514" id="oauth2relay286531514" src="./utilis_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><div style="display: block; visibility: hidden; position: absolute; width: 106px; left: -1000px; top: -1000px;"><table cellpadding="0" cellspacing="0" dir="ltr" style="width:106px;" frame="void" rules="none" class=" gc-bubbleDefault pls-container"><tbody><tr class="gc-reset"><td class="pls-topLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./utilis_files/border_3.gif"></td><td class="pls-topTail gc-reset"><img class="pls-tailbottom gc-reset" style="width:15px !important; height:9px !important; max-width: 15px !important; max-height: 9px !important;" src="./utilis_files/spacer.gif"><img class="pls-spacerbottom gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./utilis_files/spacer.gif"></td><td class="pls-topRight gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./utilis_files/border_3.gif"></td></tr><tr class="gc-reset"><td class="pls-vertShimLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="./utilis_files/spacer.gif"></td><td class="pls-vertShim gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="./utilis_files/spacer.gif"></td><td class="pls-vertShimRight gc-reset"><img class="pls-dropTR gc-reset" style="width:5px !important; height:4px !important; max-width: 5px !important; max-height: 4px !important;" src="./utilis_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-contentLeft gc-reset"><img class="pls-tailright gc-reset" style="width:9px !important; height:15px !important; max-width: 9px !important; max-height: 15px !important;" src="./utilis_files/spacer.gif"><img class="pls-spacerright gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./utilis_files/spacer.gif"></td><td class="pls-contentWrap gc-reset"><div class="goog-bubble-content gc-reset"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="margin:0px;position:absolute;z-index:1;border-style:none;outline:none;width:100px;" tabindex="0" vspace="0" width="100%" id="I0_1683532827947" name="I0_1683532827947" src="./utilis_files/subscribe_embed(1).html"></iframe></div></td><td class="pls-dropRight gc-reset"><img class="pls-tailleft gc-reset" style="width:12px !important; height:19px !important; max-width: 12px !important; max-height: 19px !important;" src="./utilis_files/spacer.gif"><img class="pls-spacerleft gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./utilis_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-bottomLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./utilis_files/border_3.gif"></td><td class="gc-reset"><table cellpadding="0" cellspacing="0" style="width:100%" class="gc-reset"><tbody><tr class="gc-reset"><td class="pls-vert gc-reset"><img class="pls-dropBL gc-reset" style="width:4px !important; height:5px !important; max-width: 4px !important; max-height: 5px !important;" src="./utilis_files/spacer.gif"></td><td class="pls-dropBottom gc-reset"><img class="pls-tailtop gc-reset" style="width:19px !important; height:13px !important; max-width: 19px !important; max-height: 13px !important;" src="./utilis_files/spacer.gif"><img class="pls-spacertop gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./utilis_files/spacer.gif"></td></tr></tbody></table></td><td class="pls-vert gc-reset"><img class="pls-dropBR gc-reset" style="width:5px !important; height:5px !important; max-width: 5px !important; max-height: 5px !important;" src="./utilis_files/spacer.gif"></td></tr></tbody></table></div></body></html>

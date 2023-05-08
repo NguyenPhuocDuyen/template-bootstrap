@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://xuanthulab.net/tao-tooltip-voi-bootstrap.html -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="fb:app_id" content="1565807193699425">
+<meta name="description" content="Tạo tooltip, box nhỏ xuất hiện khi chuột di chuyển trên phần tử, ẩn khi chuột ra khỏi phần tử">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Tạo Tooltip với Bootstrap">
+<meta property="og:description" content="Tạo tooltip, box nhỏ xuất hiện khi chuột di chuyển trên phần tử, ẩn khi chuột ra khỏi phần tử">
+<meta property="og:url" content="https://xuanthulab.net/tao-tooltip-voi-bootstrap.html">
+<title>Tạo Tooltip với Bootstrap</title>
+
+    <link href="./Tooltip_files/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./Tooltip_files/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="./Tooltip_files/jquery-ui.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="https://xuanthulab.net/public/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <script src="./Tooltip_files/cb=gapi.loaded_2" nonce="q55xBZvL" async=""></script><script src="./Tooltip_files/sdk.js.tải xuống" async="" crossorigin="anonymous"></script><script src="./Tooltip_files/cb=gapi.loaded_1" nonce="q55xBZvL" async=""></script><script src="./Tooltip_files/cb=gapi(2).loaded_0" nonce="q55xBZvL" async=""></script><script src="./Tooltip_files/jquery-3.1.0.min.js.tải xuống"></script>
+    <script src="./Tooltip_files/popper.min.js.tải xuống"></script>
+    <script src="./Tooltip_files/bootstrap.min.js.tải xuống"></script>
+    <script src="./Tooltip_files/jquery-ui.min.js.tải xuống"></script>
+    <script src="./Tooltip_files/jquery.ui.touch-punch.min.js.tải xuống"></script>
+    <script src="./Tooltip_files/xtlab.js.tải xuống"></script>
+
+    <script async="" src="./Tooltip_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1NQM4YL839');
+    </script>
+
+<link rel="canonical" href="https://xuanthulab.net/tao-tooltip-voi-bootstrap.html">
+<style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style><style>.gc-bubbleDefault{background-color:transparent!important;text-align:left;padding:0!important;margin:0!important;border:0!important;table-layout:auto!important}.gc-reset{background-color:transparent!important;border:0!important;padding:0!important;margin:0!important;text-align:left}.pls-bubbleTop{border-bottom:1px solid #ccc!important}.pls-contentLeft,.pls-topTail,.pls-vertShimLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif)!important}.pls-topTail{background-repeat:repeat-x!important;background-position:bottom!important}.pls-vertShim{background-color:#fff!important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5!important}.pls-vertShimLeft{background-repeat:repeat-y!important;background-position:100%!important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2!important}.pls-contentWrap{background-color:#fff!important;position:relative!important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:100%;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png)!important;background-repeat:repeat-y!important;vertical-align:top}.pls-dropBL,.pls-dropTR .pls-dropBR,.pls-tailleft,.pls-vert,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png)!important;background-repeat:repeat-x!important;width:100%;vertical-align:top}.pls-topLeft{background:inherit!important;text-align:right;vertical-align:bottom}.pls-topRight{background:inherit!important;text-align:left;vertical-align:bottom}.pls-bottomLeft{background:inherit!important;text-align:right}.pls-bottomRight{background:inherit!important;text-align:left;vertical-align:top}.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{display:none;position:relative}.pls-dropBL,.pls-dropBR,.pls-dropTR,.pls-tailbottom,.pls-tailleft,.pls-tailright,.pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png)!important;background-repeat:no-repeat}.tbl-grey .pls-dropBL,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropTR,.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailleft,.tbl-grey .pls-tailright,.tbl-grey .pls-tailtop{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png)!important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-tailbottom,.pls-topLeft img,.pls-topRight img{vertical-align:bottom}.bubbleDropTR,.pls-bottomLeft,.pls-bottomLeft img,.pls-dropBottom img,.pls-dropBottomL img,.pls-dropBottomR img{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacerbottom,.pls-spacerleft,.pls-spacerright,.pls-spacertop{position:static!important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0}</style></head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="https://xuanthulab.net/">Trang chủ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navcontentsupported" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navcontentsupported collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="https://xuanthulab.net/tao-tooltip-voi-bootstrap.html#" id="bootstraplist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bài viết Bootstrap 4.1</a><div class="dropdown-menu navcontentsupported" aria-labelledby="bootstraplist"><a class="dropdown-item" href="https://xuanthulab.net/bootstrap-css-framework/"> §1)  Tổng quan về Bootstrap</a><a class="dropdown-item" href="https://xuanthulab.net/xay-dung-layout-co-ban-voi-bootstrap.html"> §2)  Layout / Grid lưới cột và hàng</a><a class="dropdown-item" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html"> §3)  Các tiện ích trình bày cơ bản</a><a class="dropdown-item" href="https://xuanthulab.net/ung-dung-lop-media-cua-bootstrap.html"> §4)  Đối tượng Media</a><a class="dropdown-item" href="https://xuanthulab.net/tao-breadcrumb-voi-bootstrap.html"> §5)  Breadcrumb</a><a class="dropdown-item" href="https://xuanthulab.net/thanh-dieu-huong-phan-trang-pagination-trong-bootstrap.html"> §6)  Pagination</a><a class="dropdown-item" href="https://xuanthulab.net/su-dung-badge-tao-ra-cac-nhan-lable-trong-bootstrap.html"> §7)  Badge - Label -Tag</a><a class="dropdown-item" href="https://xuanthulab.net/tao-cac-nut-bam-nhom-nut-bam-button-trong-boostrap.html"> §8)  Button - Nút bấm</a><a class="dropdown-item" href="https://xuanthulab.net/su-dung-jumbotron-tao-box-trinh-dien-lon-trong-bootstrap.html"> §9)  Jumbotron</a><a class="dropdown-item" href="https://xuanthulab.net/co-ban-ve-nav-xay-dung-tab-trong-bootstrap.html"> §10)  Tabs</a><a class="dropdown-item" href="https://xuanthulab.net/tao-thanh-navbar-trong-bootstrap.html"> §11)  NavBar</a><a class="dropdown-item" href="https://xuanthulab.net/su-dung-card-tao-box-chua-noi-dung-trong-bootstrap.html"> §12)  Card</a><a class="dropdown-item" href="https://xuanthulab.net/su-dung-collapse-an-hien-noi-dung-html-trong-bootstrap.html"> §13)  Collapse</a><a class="dropdown-item" href="https://xuanthulab.net/tao-cac-menu-do-xuong-dropdown-trong-bootstrap.html"> §14)  DropDown Menu</a><a class="dropdown-item" href="https://xuanthulab.net/tao-alert-trong-bootstrap.html"> §15)  Alert</a><a class="dropdown-item" href="https://xuanthulab.net/tao-cac-slide-trong-bootstrap-voi-carousel.html"> §16)  Slide</a><a class="dropdown-item" href="https://xuanthulab.net/tao-list-group-trong-bootstrap.html"> §17)  List Group</a><a class="dropdown-item" href="https://xuanthulab.net/tao-ra-popover-voi-boostrap.html"> §18)  Popover</a><a class="dropdown-item" href="https://xuanthulab.net/tao-thanh-progress-voi-bootstrap.html"> §19)  Progress</a><a class="dropdown-item active" href="https://xuanthulab.net/tao-tooltip-voi-bootstrap.html"> §20)  Tooltip</a><a class="dropdown-item" href="https://xuanthulab.net/tao-cac-hop-thoai-modal-trong-bootstrap.html"> §21)  Hộp thoại - Modal</a><a class="dropdown-item" href="https://xuanthulab.net/xay-dung-html-form-voi-bootstrap.html"> §22)  Form</a></div></li><li class="nav-item">
+                                    <a class="nav-link active text-warning" href="https://xuanthulab.net/tao-tooltip-voi-bootstrap.html"> §20)  Tooltip</a>
+                                </li>
+               
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+
+<div class="container"><nav class="breadcrumbnav"><ul class="breadcrumb" vocab="https://schema.org/" typeof="BreadcrumbList"><li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+                  <a property="item" typeof="WebPage" href="https://xuanthulab.net/css/">
+                    <span property="name">CSS</span>
+                  </a>
+                <meta property="position" content="1"></li><li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+                  <a property="item" typeof="WebPage" href="https://xuanthulab.net/bootstrap-css-framework/">
+                    <span property="name">Bootstrap - CSS Framework</span>
+                  </a>
+                <meta property="position" content="2"></li></ul></nav>
+
+<div class="page-header">
+    <h1>Tạo Tooltip với Bootstrap</h1>
+    <p class="lead">Tạo tooltip, box nhỏ xuất hiện khi chuột di chuyển trên phần tử, ẩn khi chuột ra khỏi phần tử</p>
+</div>
+<div class="main-post">
+    <script async="" src="./Tooltip_files/f.txt"></script>
+    <!-- XUANTHULAB1 -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4170344512131207" data-ad-slot="6971440560" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    
+<h3>Kích hoạt Tooltip</h3>
+<p>Hãy cho thêm đoạn JS sau khi trang được tải</p>
+<pre class="prettyprint lang-html">&lt;script&gt;
+    $(function () {
+       $('[data-toggle="tooltip"]').tooltip()
+    })
+&lt;/script&gt;</pre>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+
+    })
+</script>
+<p>Với đoạn JS trên thì bất kỳ phần tử nào có thuộc tính <code>data-toggle="tooltip"</code> nó sẽ được xem xét để hiện thị Tooltip khi chuột ở phía trên phần tử đó</p>
+<h3>Tạo tooltip</h3>
+<p>Phần tử nào muốn hiện thị tooltip thì cho nó thêm thuộc tính <code>data-toggle="tooltip"</code>, thuộc tính <code>title=""</code>  là nội dung mà Tooltip hiện thị, cho thêm <code>data-placement="top"</code> nếu muốn hiện thị phía trên, tương tự có các loại <code>data-placement="bottom"</code>, <code>data-placement="left"</code>, <code>data-placement="right"</code></p>
+<p><strong>Ví dụ:</strong> <button type="button" data-toggle="tooltip" title="" data-placement="top" class="btn btn-primary btn-sm" data-original-title="Tooltip hiện thị - Trên">
+        Tooltip
+    </button></p>
+<pre class="prettyprint lang-html">&lt;button type="button"
+       data-toggle="tooltip"
+       title="Tooltip hiện thị - Trên"
+       data-placement="top"
+       class="btn btn-primary btn-sm"&gt;
+    Tooltip
+&lt;/button&gt;</pre>
+
+
+
+
+     
+           
+
+ 
+             <div class="p-2 row justify-content-center align-items-center align-content-center m-1 mb-4 youtubesub">
+                    <div class="col-6 text-right text-uppercase textintro">
+                        <a href="https://www.youtube.com/xuanthulab?sub_confirmation=1" target="_blank" class="btn btn-sm btn-warning">ĐĂNG KÝ KÊNH, XEM CÁC VIDEO TRÊN XUANTHULAB</a>
+                    </div>
+                    <div class="col-6">
+                        <div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 450px; height: 24px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 450px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 24px;" tabindex="0" vspace="0" width="100%" id="I0_1683533225379" name="I0_1683533225379" src="./Tooltip_files/subscribe_embed.html" data-gapiattached="true"></iframe></div>
+                    </div>
+                    
+                    <div class="col-12">
+                    <hr>
+                     <form class="form-inline  mt-2 w-100" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#39;https://feedburner.google.com/fb/a/mailverify?uri=xuanthulab&#39;, &#39;popupwindow&#39;, &#39;scrollbars=yes,width=550,height=520&#39;);return true">
+                 <span></span>
+                  <div class="input-group mb-2 mr-sm-2">
+<div class="input-group-prepend">
+      <div class="input-group-text">Đăng ký nhận bài viết mới</div>
+    </div>
+    <input type="text" class="form-control" style="width:200px" name="email" placeholder="Địa chỉ email">
+  </div>
+
+                
+                <input type="hidden" value="xuanthulab" name="uri">
+                <input type="hidden" name="loc" value="en_US">
+                <input type="submit" value="Đăng ký" class="btn btn-danger mb-2"></form>
+</div>
+                    
+                   
+                    
+                
+            </div>
+
+
+</div>
+
+
+        <div class="socialmediabox">
+            
+<div class="fb-like fb_iframe_widget" data-href="https://xuanthulab.net/tao-tooltip-voi-bootstrap.html" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1565807193699425&amp;container_width=1110&amp;href=https%3A%2F%2Fxuanthulab.net%2Ftao-tooltip-voi-bootstrap.html&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;size=small&amp;width="><span style="vertical-align: bottom; width: 150px; height: 28px;"><iframe name="f21bb208a3827a8" width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./Tooltip_files/like.html" style="border: none; visibility: visible; width: 150px; height: 28px;" class=""></iframe></span></div>
+
+
+ <div class="tw">
+ <a href="https://twitter.com/share?url=https://xuanthulab.net/tao-tooltip-voi-bootstrap.html&amp;via=xaydungkientruc">
+ <img src="./Tooltip_files/favicon.ico">
+</a>
+</div>        </div>
+        <div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="https://xuanthulab.net/tao-tooltip-voi-bootstrap.html" data-width="100%" data-numposts="5" data-colorscheme="light" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=1565807193699425&amp;color_scheme=light&amp;container_width=1110&amp;height=100&amp;href=https%3A%2F%2Fxuanthulab.net%2Ftao-tooltip-voi-bootstrap.html&amp;locale=vi_VN&amp;numposts=5&amp;sdk=joey&amp;version=v7.0&amp;width=" style="width: 100%;"><span style="vertical-align: bottom; width: 100%; height: 203px;"><iframe name="f2f481a0183ee7c" width="1000px" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./Tooltip_files/comments.html" style="border: none; visibility: visible; width: 100%; height: 203px;" class=""></iframe></span></div>
+
+<aside class="box-post-others">
+    <div class="list-group">
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/dung-grunt-tao-du-an-bien-dich-sass-thanh-css-tuy-bien-thu-vien-css-bootstrap.html">Dùng grunt tạo dự án biên dịch SASS thành CSS tùy biến thư viện CSS Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/ung-dung-lop-media-cua-bootstrap.html">Ứng dụng lớp .media của Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/cac-tien-ich-css-co-ban-cua-bootstrap.html">Các tiện ích CSS cơ bản của Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/xay-dung-layout-co-ban-voi-bootstrap.html">Xây dựng Layout cơ bản với Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/tao-thanh-navbar-trong-bootstrap.html">Tạo thanh Navbar trong Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/tao-cac-hop-thoai-modal-trong-bootstrap.html">Tạo các hộp thoại Modal trong Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" href="https://xuanthulab.net/xay-dung-html-form-voi-bootstrap.html">Xây dựng HTML Form với Bootstrap</a>
+            </div>
+</aside>
+
+
+
+</div><script src="./Tooltip_files/platform.js.tải xuống" async="" defer="" gapi_processed="true">{lang: 'vi'}</script>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+<script async="" defer="" crossorigin="anonymous" src="./Tooltip_files/sdk.js(1).tải xuống" nonce="q55xBZvL"></script>
+
+
+<iframe name="oauth2relay973149293" id="oauth2relay973149293" src="./Tooltip_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><div style="display: block; visibility: hidden; position: absolute; width: 106px; left: -1000px; top: -1000px;"><table cellpadding="0" cellspacing="0" dir="ltr" style="width:106px;" frame="void" rules="none" class=" gc-bubbleDefault pls-container"><tbody><tr class="gc-reset"><td class="pls-topLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Tooltip_files/border_3.gif"></td><td class="pls-topTail gc-reset"><img class="pls-tailbottom gc-reset" style="width:15px !important; height:9px !important; max-width: 15px !important; max-height: 9px !important;" src="./Tooltip_files/spacer.gif"><img class="pls-spacerbottom gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Tooltip_files/spacer.gif"></td><td class="pls-topRight gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Tooltip_files/border_3.gif"></td></tr><tr class="gc-reset"><td class="pls-vertShimLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="./Tooltip_files/spacer.gif"></td><td class="pls-vertShim gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="./Tooltip_files/spacer.gif"></td><td class="pls-vertShimRight gc-reset"><img class="pls-dropTR gc-reset" style="width:5px !important; height:4px !important; max-width: 5px !important; max-height: 4px !important;" src="./Tooltip_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-contentLeft gc-reset"><img class="pls-tailright gc-reset" style="width:9px !important; height:15px !important; max-width: 9px !important; max-height: 15px !important;" src="./Tooltip_files/spacer.gif"><img class="pls-spacerright gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Tooltip_files/spacer.gif"></td><td class="pls-contentWrap gc-reset"><div class="goog-bubble-content gc-reset"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="margin:0px;position:absolute;z-index:1;border-style:none;outline:none;width:100px;" tabindex="0" vspace="0" width="100%" id="I0_1683533225768" name="I0_1683533225768" src="./Tooltip_files/subscribe_embed(1).html"></iframe></div></td><td class="pls-dropRight gc-reset"><img class="pls-tailleft gc-reset" style="width:12px !important; height:19px !important; max-width: 12px !important; max-height: 19px !important;" src="./Tooltip_files/spacer.gif"><img class="pls-spacerleft gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Tooltip_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-bottomLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Tooltip_files/border_3.gif"></td><td class="gc-reset"><table cellpadding="0" cellspacing="0" style="width:100%" class="gc-reset"><tbody><tr class="gc-reset"><td class="pls-vert gc-reset"><img class="pls-dropBL gc-reset" style="width:4px !important; height:5px !important; max-width: 4px !important; max-height: 5px !important;" src="./Tooltip_files/spacer.gif"></td><td class="pls-dropBottom gc-reset"><img class="pls-tailtop gc-reset" style="width:19px !important; height:13px !important; max-width: 19px !important; max-height: 13px !important;" src="./Tooltip_files/spacer.gif"><img class="pls-spacertop gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Tooltip_files/spacer.gif"></td></tr></tbody></table></td><td class="pls-vert gc-reset"><img class="pls-dropBR gc-reset" style="width:5px !important; height:5px !important; max-width: 5px !important; max-height: 5px !important;" src="./Tooltip_files/spacer.gif"></td></tr></tbody></table></div></body></html>
